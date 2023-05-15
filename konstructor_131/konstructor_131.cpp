@@ -4,12 +4,35 @@ using namespace std;
 
 class mahasiswa {
 private:
-	int nim;
-	string nama;
+	int Nim;
+	string Nama;
 public:
 	mahasiswa();
 	mahasiswa(int);
 	mahasiswa(string);
-	mahasiswa(intiNim, string iNama);
+	mahasiswa(int iNim, string iNama);
 	void cetak();
 };
+
+mahasiswa::mahasiswa() {
+	Nim = 0;
+	Nama = "";
+}
+
+mahasiswa::mahasiswa(int iNim) {
+	Nim = iNim;
+}
+
+mahasiswa::mahasiswa(string iNama) {
+	Nama = iNama;
+}
+
+mahasiswa::mahasiswa::mahasiswa(int iNim, string iNama) {
+	Nim = iNim;
+	Nama = iNama;
+}
+
+void mahasiswa::cetak() {
+	cout << endl << "Nim = " << Nim << endl;
+	cout << "Nama = " << Nama << endl;
+}
