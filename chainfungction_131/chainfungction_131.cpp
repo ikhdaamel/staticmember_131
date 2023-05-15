@@ -15,3 +15,11 @@ public:
 		return this->judul;
 	}
 }bukunya;
+
+int main()
+{
+	//bukunya.setJudul("matematika");
+	//cout << bukunya.getJudul();
+	cout << bukunya.setJudul("matematika").getJudul();			//chain fanction calls
+	return 0;
+}
